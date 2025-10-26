@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Preparedness</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN FORM -->
+    <div id="login-container" class="card">
+        <h3>Login to Disaster Preparedness PH</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-btn" class="btn-primary">Login</button>
+        <p style="text-align:center; margin-top:10px;">
+            Don't have an account? <a href="#" id="signup-link">Sign Up</a>
+        </p>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signup-container" class="card hidden">
+        <h3>Signup to Disaster Preparedness PH</h3>
+        <!-- Username -->
+        <input type="text" id="signup_username" placeholder="Username" required>
+    
+        <!-- First Name -->
+        <input type="text" id="first_name" placeholder="First Name" required>
+    
+        <!-- Middle Name -->
+        <input type="text" id="middle_name" placeholder="Middle Name">
+    
+        <!-- Last Name -->
+        <input type="text" id="last_name" placeholder="Last Name" required>
+    
+        <!-- Email -->
+        <input type="email" id="email" placeholder="Email Address" required>
+    
+        <!-- Password -->
+        <input type="password" id="signup_password" placeholder="Password" required>
+        <input type="password" id="signup_password2" placeholder="Confirm Password" required>
+    
+        <button id="signup-btn" class="btn-primary">Create Account</button>
+        <p style="text-align:center; margin-top:10px;">
+            Already have an account? <a href="#" id="back-to-login">Login</a>
+        </p>
+    </div>
+
+    <!-- MAIN APP -->
+    <div id="main-container" class="hidden">
+        <header class="appbar">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <a href="#" data-page="home.html" class="active">Home</a>
+                <a href="#" data-page="risks.html">Know the Risks</a>
+                <a href="#" data-page="prepare.html">Prepare Now</a>
+                <a href="#" data-page="during.html">During a Disaster</a>
+                <a href="#" data-page="after.html">After the Disaster</a>
+                <a href="#" data-page="news.html">News and Updates</a>
+                <a href="#" data-page="about.html">About Us</a>
+            </nav>
+            <div class="profile" id="profile">
+                <span class="material-icons avatar">account_circle</span>
+                <span class="username">User</span>
+                <div class="dropdown" id="profile-dropdown">
+                    <a href="#" id="logout-btn">Logout</a>
+                </div>
+            </div>
+        </header>
+
+        <main id="content" class="card">
+            <p>Welcome! Use the menu to navigate.</p>
+        </main>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 Disaster Preparedness PH
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
